@@ -152,9 +152,9 @@ const AddressParse = (address, options) => {
         cityName = provinceName
     }
     return Object.assign(parseResult, {
-        province: provinceName || '',
-        city: cityName || '',
-        area: (area && area.name) || '',
+        province: province || '',
+        city: city || '',
+        area: area || '',
         detail: (detail && detail.length > 0 && detail.join('')) || ''
     })
 }
